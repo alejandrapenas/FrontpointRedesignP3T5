@@ -1,5 +1,5 @@
 body{
-    background: var(--Primary-gradient);
+    background: var(--White);
 }
 
 /*Nav Bar Styles*/
@@ -16,7 +16,7 @@ body{
 }
 
 .nav-item{
-    font-size: 24px;
+    font-size: 20px;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
@@ -52,6 +52,18 @@ img {
     height: fit-content;
 }
 
+.cover-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .text-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
 /*Projects Section Styles*/
 .projectsArea{
     padding: 50px 0px;
@@ -80,5 +92,5 @@ footer{
     margin-top: 100px;
     padding: 30px;
     text-align: center;
-    background: var(--Primary-gradient-rev);
+    background: var(--White);
 }

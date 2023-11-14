@@ -1,18 +1,31 @@
 body{
-    background: var(--White);
+    background: var(--Gray-extra-light);
 }
+
+h1{
+    color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
 
 /*Nav Bar Styles*/
 .nav-link{
-    color: var(--Primary);
+    color: var(--Gray-dark);
 }
 
 .nav-link:hover {
-    color: var(--Primary-dark);
+    color: var(--Primary);
 }
 
 .nav-link:active {
-    color: var(--Secondary-dark);
+    color: var(--Primary-dark);
+}
+
+a{
+    color: var(--Primary-dark);
 }
 
 .nav-item{
@@ -21,6 +34,11 @@ body{
     padding-right: 30px;
     padding-top: 20px;
     font-weight: 600;
+}
+
+.navbar{
+    padding-top: 0.5rem;
+    padding-bottom: 6rem;
 }
 
 /*Dropdown Styles*/
@@ -39,16 +57,23 @@ body{
 }
 
 /*Main Section Styles*/
-.mainContent{
-    padding: 100px 0px;
+.mainContent {
     display: flex;
-    justify-content: center;
     align-items: center;
+    display: inline-block;
+}
+
+.col-md-9 {
+    float: right;
+}
+
+.heroImages {
+    height: fit-content;
 }
 
 img {
     object-fit: contain;
-    width: 300px;
+    height: 517px;
     height: fit-content;
 }
 
@@ -56,35 +81,51 @@ img {
     width: 100%;
     height: auto;
     object-fit: cover;
-  }
+}
   
-  .text-center {
+.text-center {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-  }
+}
 
-/*Projects Section Styles*/
-.projectsArea{
+/*Features Section Styles*/
+.featuresArea{
     padding: 50px 0px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
-.projectsArea .card{
+.featuresArea .card{
     margin-top: 30px;
 }
 
-.projectCard{
-    height: 128px;
+.featureCard{
+    height: 517px;
     object-fit: contain;
     padding: 20px;
-    background-color: var(--Secondary-extra-light);
+    background-color: var(--Gray-extra-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
 }
+
+/* Need to think this through to apply only to picture
+.card:hover{
+    box-shadow: 2px 2px 30px 0px rgba(0, 0, 0, 0.40);
+}
+*/
 
 .projectAreas .card a{
     display: block;
+}
+
+.card-body{
+    background-color: var(--Gray-extra-light);
+    text-align: center;
 }
 
 /*Footer Styles*/
@@ -92,5 +133,5 @@ footer{
     margin-top: 100px;
     padding: 30px;
     text-align: center;
-    background: var(--White);
+    background: var(--Gray-extra-light);
 }
